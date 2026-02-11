@@ -114,55 +114,202 @@ section {
   text-align: center;
 }
 
-#about, #feelings, #booklet, #contact {
+/* About the Play */
+#about {
   background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 60px 30px;
+}
+#about h2 {
+  color: var(--purple);
+}
+#about p {
+  text-align: left;
+  margin-bottom: 15px;
 }
 
-#characters, #schools {
+/* Meet the Characters */
+#characters {
   background-color: var(--green);
   color: #fff;
 }
-
-#color-method {
-  background-color: #f9f9f9;
-}
-
-#gallery {
-  background-color: var(--cream);
-}
-
-#testimonials {
-  background-color: var(--purple);
-  color: #fff;
-}
-
-/* Cards */
-.character-cards, .color-cards, .grid {
+.character-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-
-.card, .placeholder, .quote {
+.character-cards .card {
   background-color: #fff;
-  border-radius: 10px;
+  color: #333;
+  border-radius: 12px;
   padding: 20px;
-  flex: 1 1 200px;
+  max-width: 250px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
-
-.card:hover, .placeholder:hover, .quote:hover {
+.character-cards .card:hover {
   transform: scale(1.05);
 }
+.character-cards .card h3 {
+  color: var(--purple);
+}
 
-/* COLOR Method cards */
+/* COLOR Method */
+#color-method {
+  background-color: #f9f9f9;
+}
+.color-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
 #color-method .card:nth-child(1) { background-color: var(--pink); color: #fff; }
 #color-method .card:nth-child(2) { background-color: var(--orange); color: #fff; }
 #color-method .card:nth-child(3) { background-color: var(--yellow); }
 #color-method .card:nth-child(4) { background-color: var(--blue); color: #fff; }
 #color-method .card:nth-child(5) { background-color: var(--red); color: #fff; }
+#color-method .card {
+  text-align: center;
+  font-size: 1.1em;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* What Is a Feeling */
+#feelings {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 60px 30px;
+}
+#feelings h2 {
+  color: var(--purple);
+}
+#feelings p {
+  text-align: left;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+/* Educational Value / For Schools */
+#schools {
+  background-color: var(--green);
+  color: #fff;
+  border-radius: 12px;
+  padding: 60px 30px;
+}
+#schools h2 {
+  margin-bottom: 20px;
+}
+#schools ul {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+/* Take-Home Booklet */
+#booklet {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 60px 30px;
+}
+#booklet h2 {
+  color: var(--purple);
+}
+#booklet ul {
+  list-style: disc;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+#booklet li {
+  margin-bottom: 10px;
+}
+
+/* Practical Information */
+#info {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  max-width: 700px;
+  padding: 40px 30px;
+}
+#info ul {
+  list-style: none;
+  padding: 0;
+}
+#info li {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Gallery */
+#gallery {
+  background-color: var(--cream);
+}
+#gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+#gallery .placeholder {
+  background-color: #ddd;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #555;
+  border-radius: 10px;
+}
+
+/* Testimonials */
+#testimonials {
+  background-color: var(--purple);
+  color: #fff;
+}
+.quote {
+  background-color: rgba(255,255,255,0.1);
+  border-left: 5px solid var(--yellow);
+  padding: 20px;
+  font-style: italic;
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 8px;
+}
+.quote:hover {
+  transform: scale(1.05);
+  background-color: rgba(255,255,255,0.2);
+}
+
+/* Contact */
+#contact {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  max-width: 700px;
+  padding: 40px 30px;
+}
+#contact h2 {
+  color: var(--purple);
+}
+#contact p {
+  margin: 10px 0;
+}
 
 /* Footer */
 footer {
@@ -171,11 +318,27 @@ footer {
   background-color: #333;
   color: #fff;
 }
-
 footer .logo {
   width: 80px;
   margin-bottom: 10px;
 }
+footer .social-icons {
+  margin: 10px 0;
+}
+footer .quick-links {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #ccc;
+}
+footer .quick-links a {
+  color: #ccc;
+  text-decoration: none;
+  margin: 0 5px;
+}
+footer .quick-links a:hover {
+  color: var(--yellow);
+}
+
 /* Hamburger menu */
 .hamburger {
   display: none;
@@ -183,7 +346,6 @@ footer .logo {
   cursor: pointer;
   gap: 5px;
 }
-
 .hamburger span {
   width: 25px;
   height: 3px;
@@ -203,11 +365,9 @@ footer .logo {
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
-
   nav ul.nav-links.active {
     display: flex;
   }
-
   .hamburger {
     display: flex;
   }
