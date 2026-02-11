@@ -123,15 +123,10 @@ section {
   max-width: 900px;
   padding: 60px 30px;
 }
-#about h2 {
-  color: var(--purple);
-}
-#about p {
-  text-align: left;
-  margin-bottom: 15px;
-}
+#about h2 { color: var(--purple); }
+#about p { text-align: left; margin-bottom: 15px; }
 
-/* Meet the Characters */
+/* Characters */
 #characters {
   background-color: var(--green);
   color: #fff;
@@ -151,17 +146,11 @@ section {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
-.character-cards .card:hover {
-  transform: scale(1.05);
-}
-.character-cards .card h3 {
-  color: var(--purple);
-}
+.character-cards .card:hover { transform: scale(1.05); }
+.character-cards .card h3 { color: var(--purple); }
 
 /* COLOR Method */
-#color-method {
-  background-color: #f9f9f9;
-}
+#color-method { background-color: #f9f9f9; }
 .color-cards {
   display: flex;
   flex-wrap: wrap;
@@ -190,24 +179,15 @@ section {
   max-width: 900px;
   padding: 60px 30px;
 }
-#feelings h2 {
-  color: var(--purple);
-}
-#feelings p {
-  text-align: left;
-  margin-bottom: 15px;
-  font-style: italic;
-}
+#feelings h2 { color: var(--purple); }
+#feelings p { text-align: left; margin-bottom: 15px; font-style: italic; }
 
-/* Educational Value / For Schools */
+/* Schools */
 #schools {
   background-color: var(--green);
   color: #fff;
   border-radius: 12px;
   padding: 60px 30px;
-}
-#schools h2 {
-  margin-bottom: 20px;
 }
 #schools ul {
   text-align: left;
@@ -215,7 +195,7 @@ section {
   margin: 0 auto 20px;
 }
 
-/* Take-Home Booklet */
+/* Booklet */
 #booklet {
   background-color: #fff;
   border-radius: 12px;
@@ -224,9 +204,7 @@ section {
   max-width: 900px;
   padding: 60px 30px;
 }
-#booklet h2 {
-  color: var(--purple);
-}
+#booklet h2 { color: var(--purple); }
 #booklet ul {
   list-style: disc;
   text-align: left;
@@ -234,12 +212,10 @@ section {
   margin: 0 auto;
   padding-left: 20px;
 }
-#booklet li {
-  margin-bottom: 10px;
-}
+#booklet li { margin-bottom: 10px; }
 
-/* Practical Information */
-#info {
+/* Practical Info */
+#practical-info {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -247,19 +223,11 @@ section {
   max-width: 700px;
   padding: 40px 30px;
 }
-#info ul {
-  list-style: none;
-  padding: 0;
-}
-#info li {
-  margin: 10px 0;
-  font-weight: bold;
-}
+#practical-info ul { list-style: none; padding: 0; }
+#practical-info li { margin: 10px 0; font-weight: bold; }
 
 /* Gallery */
-#gallery {
-  background-color: var(--cream);
-}
+#gallery { background-color: var(--cream); }
 #gallery .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -304,12 +272,8 @@ section {
   max-width: 700px;
   padding: 40px 30px;
 }
-#contact h2 {
-  color: var(--purple);
-}
-#contact p {
-  margin: 10px 0;
-}
+#contact h2 { color: var(--purple); }
+#contact p { margin: 10px 0; }
 
 /* Footer */
 footer {
@@ -318,23 +282,9 @@ footer {
   background-color: #333;
   color: #fff;
 }
-footer .logo {
-  width: 80px;
-  margin-bottom: 10px;
-}
-footer .social-icons {
-  margin: 10px 0;
-}
-footer .quick-links {
-  margin-top: 10px;
-  font-size: 0.9em;
-  color: #ccc;
-}
-footer .quick-links a {
-  color: #ccc;
-  text-decoration: none;
-  margin: 0 5px;
-}
+footer .logo { width: 80px; margin-bottom: 10px; }
+footer .quick-links { margin-top: 10px; font-size: 0.9em; color: #ccc; }
+footer .quick-links a { color: #ccc; text-decoration: none; margin: 0 5px; }
 footer .quick-links a:hover {
   color: var(--yellow);
 }
