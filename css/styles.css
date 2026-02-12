@@ -116,15 +116,36 @@ section {
 
 /* About the Play */
 #about {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin: 40px auto;
+  background: linear-gradient(135deg, #fff, #fdf5e6); /* soft cream gradient */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  margin: 50px auto;
   max-width: 900px;
-  padding: 60px 30px;
+  padding: 70px 40px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
-#about h2 { color: var(--purple); }
-#about p { text-align: left; margin-bottom: 15px; }
+
+#about:hover {
+  transform: translateY(-5px);
+}
+
+#about h2 {
+  color: var(--purple);
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+#about p {
+  text-align: left;
+  margin-bottom: 18px;
+  line-height: 1.7;
+  color: #444;
+  background: #fafafa;
+  padding: 12px 15px;
+  border-left: 5px solid var(--orange);
+  border-radius: 8px;
+}
 
 /* Characters */
 #characters {
@@ -172,76 +193,220 @@ section {
 
 /* What Is a Feeling */
 #feelings {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin: 40px auto;
+  background: linear-gradient(135deg, #fff, #fdf5e6); /* soft cream gradient */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  margin: 50px auto;
   max-width: 900px;
-  padding: 60px 30px;
+  padding: 70px 40px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
-#feelings h2 { color: var(--purple); }
-#feelings p { text-align: left; margin-bottom: 15px; font-style: italic; }
+
+#feelings:hover {
+  transform: translateY(-5px);
+}
+
+#feelings h2 {
+  color: var(--purple);
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+#feelings p {
+  text-align: left;
+  margin-bottom: 18px;
+  font-style: italic;
+  line-height: 1.7;
+  color: #444;
+  background: #fafafa;
+  padding: 12px 15px;
+  border-left: 5px solid var(--pink);
+  border-radius: 8px;
+}
 
 /* Schools */
 #schools {
-  background-color: var(--green);
+  background: linear-gradient(135deg, var(--green), #7cb342); /* richer green gradient */
   color: #fff;
-  border-radius: 12px;
-  padding: 60px 30px;
+  border-radius: 18px;
+  padding: 70px 40px;
+  margin: 50px auto;
+  max-width: 950px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
 }
+
+#schools:hover {
+  transform: translateY(-5px);
+}
+
+#schools h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+#schools h3 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: var(--yellow);
+}
+
 #schools ul {
   text-align: left;
   max-width: 700px;
-  margin: 0 auto 20px;
+  margin: 0 auto 25px;
+  padding: 0;
+  list-style: none;
+}
+
+#schools li {
+  background: rgba(255,255,255,0.1);
+  padding: 10px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+#schools li:hover {
+  background: rgba(255,255,255,0.2);
 }
 
 /* Booklet */
 #booklet {
   background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  margin: 50px auto;
   max-width: 900px;
-  padding: 60px 30px;
+  padding: 70px 40px;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
-#booklet h2 { color: var(--purple); }
+
+#booklet:hover {
+  transform: translateY(-5px);
+}
+
+#booklet h2 {
+  color: var(--purple);
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+#booklet p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
 #booklet ul {
-  list-style: disc;
+  list-style: none;
   text-align: left;
   max-width: 700px;
   margin: 0 auto;
-  padding-left: 20px;
+  padding: 0;
 }
-#booklet li { margin-bottom: 10px; }
+
+#booklet li {
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  background: var(--cream);
+  border-left: 5px solid var(--yellow);
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+#booklet li:hover {
+  background: #fff8dc;
+}
 
 /* Practical Info */
 #practical-info {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin: 40px auto;
-  max-width: 700px;
-  padding: 40px 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 60px 40px;
+  text-align: center;
 }
-#practical-info ul { list-style: none; padding: 0; }
-#practical-info li { margin: 10px 0; font-weight: bold; }
+
+#practical-info h2 {
+  color: var(--purple);
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+#practical-info ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#practical-info li {
+  flex: 1 1 200px;
+  background: var(--cream);
+  padding: 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+#practical-info li:hover {
+  transform: translateY(-5px);
+  background: #fff8dc;
+}
 
 /* Gallery */
-#gallery { background-color: var(--cream); }
+#gallery {
+  background-color: var(--cream);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#gallery h2 {
+  color: var(--purple);
+  margin-bottom: 10px;
+}
+
+#gallery p {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 30px;
+}
+
 #gallery .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 15px;
+  gap: 20px;
 }
+
 #gallery .placeholder {
-  background-color: #ddd;
-  height: 150px;
+  background: linear-gradient(135deg, #eee, #ddd);
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
   color: #555;
-  border-radius: 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s, background 0.3s;
+}
+
+#gallery .placeholder:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, var(--yellow), var(--orange));
+  color: #000;
 }
 
 /* Testimonials */
@@ -265,15 +430,36 @@ section {
 
 /* Contact */
 #contact {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  margin: 40px auto;
-  max-width: 700px;
-  padding: 40px 30px;
+  background: var(--cream);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  margin: 60px auto;
+  max-width: 800px;
+  padding: 60px 40px;
+  text-align: center;
 }
-#contact h2 { color: var(--purple); }
-#contact p { margin: 10px 0; }
+
+#contact h2 {
+  color: var(--purple);
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+#contact p {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+#contact p span {
+  color: var(--pink); /* accent highlight for placeholders */
+}
+
+#contact .availability {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+}
 
 /* Footer */
 footer {
